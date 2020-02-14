@@ -1,0 +1,13 @@
+
+------Questions asked in Interview-------
+
+1. What are business rules and their types?
+2.Client Scripts and its types?
+3.What is SLA, breif about SLA, difference B/w data policy and UI policy?
+4.What is major incident in incident management?
+5.Explain transformation map and ACL's and service Catalogs?
+6.Recent Real time activity?
+7.If there are 2 tasks in catalog and in service portal i want to see only one
+  task how can u create?
+8.Knowledge Management ?
+9.About Service portal and integrations.

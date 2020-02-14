@@ -1,0 +1,15 @@
+How to create a table:
+
+Tables--> LNB-->type Tables-->under system definition--> need to select tables--> go to New--> Name:Demo Table and save
+
+How to create the fields: Go to show form--> right click-> configure-->form layout--> Name and type need select-->add and save
+
+Demo table:
+1.Number - String
+2.Name - Reference(Sys_user)
+3.Mobile Number - String
+4.Image - Image
+5.Mode of the training - Choice(Online, Offline) 
+6.Address - String
+7.URL- URL
+8.Weekend classes - True/False

@@ -1,0 +1,14 @@
+Task For onLoad:
+
+1. I want to expect show field message on Demo State field Message is
+   "Please select valid state".
+
+
+2. When Form Loads to set "Demo Number" field as "ReadOnly" 
+
+
+3. When Form Loads to set Mandatory on "Any field".
+
+
+4. when Form Loads the "state" field values I can select second value save that form. 
+   we are expecting that doesn't display on "First Value"[New, WIP, Resolved].

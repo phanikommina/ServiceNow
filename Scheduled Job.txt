@@ -1,0 +1,20 @@
+Scheduled jobs: To automate the activities at particular point of time without manual intervention.
+
+1. Automating the scheduling and distribution of the reports
+2. Creating any records for particluar table.
+3. Run a script of ur choice
+
+
+Example to delete multiple records by running scheduled jobs:
+
+
+var enc ='active=true^short_descriptionLIKEtest^ORdescriptionLIKEtest';
+
+var inc = new GlideRecord('incident');
+inc.addEncodedQuery(enc);
+inc.query();
+
+while(inc.next()){
+	inc.deleteMultiple();
+}
+

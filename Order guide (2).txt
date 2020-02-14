@@ -1,0 +1,53 @@
+How to create a Order Guide in ServiceNow
+
+
+
+*******Steps to create a order guide*******
+
+—> Go to the LNB select Order Guides under Service Catalog, select New
+
+—> Then give the name as “Employee order guide” ,select catalogs as “Service Catalog” and Category as “Services”
+
+—> Give a short description as “creating employee order guide”. Check the cascade variables field and save the order guide.
+
+—> Now create “four variables” under the variables in related links as follows:
+
+1)Requested by-Reference(field type)
+
+2)Email-Email
+
+3)PhoneNumber-Single line text
+
+4)Employee-SelectBox, under this create choices as “New Employee” and “Old Employee”
+
+—> Go to “Rule base” Under Related Links ,select New, under guide select the “Employee order guide” you already created.
+
+—> Under if this condition is true select “Employee” field in Add Filter Condition ,under operation select “is” and value as “New Employee”
+
+—> select the catalog item “New mobile” in include this item field, give at this position value as 1 and quantity as 1 and hit update.
+
+Similarly create another two new  rule base with the condition :
+
+1)Employee — is— Old Employee
+
+Include any other catalog item you created like laptop & value for position and quantity as 1
+
+2)create a new rule base for both the employees (new & old) ,give a common catalog item for both, with at this position value=2 and quantity as 1
+
+Here, you don’t need to give any condition for the ‘if this condition is true’ field as you are giving the catalog item common for both the employees.
+
+—>now hit the try it..
+
+Enter the values for the requested by ,email, phone number,  and select “New employee” in the employee field and hit the choose options.
+
+Now you will able see the catalog item assigned for new employee and the common item for both employees.now hit checkout.you will asked to review items in your cart.then checkout it takes you to order status
+
+
+
+
+
+——>now go back to your order guide and check the “Two step” field and now try it
+
+Now pass the values for the fields and click choose options and then once you hit checkout, it directly takes you to order status .
+
+So, the difference is here it doesn’t ask you to review your item in the cart

@@ -1,0 +1,29 @@
+Data Sources: Source of the data which we have to import into servicenow staging table.4
+
+Transform map: To move the data from source table to target table by using the field maps, we will use transform maps.
+
+Coalesce: If you set to coalesce as true for the unique field it will check if the record is already there in the table or not, if not there it will create. 
+If record is there then it will update.
+
+>> How to avoid duplicate record insertion into the target table when we are importing the data?
+
+Ans: By setting the coalsce as true.
+
+>> We can set the coalsce for multiple fields as well.
+
+
+Types of Transform scripts:
+
+1. onStart
+2. onBefore
+3. onAfter
+4. onReject
+5. onComplete
+6. onForeigninsert
+7. onChoicecreate
+
+>> Transform map scripts execution sequence:
+
+https://community.servicenow.com/community?id=community_question&sys_id=6a468fa1db1cdbc01dcaf3231f961948
+
+Transform scripts: http://www.john-james-andersen.com/blog/navigating-transform-scripts-in-servicenow.html

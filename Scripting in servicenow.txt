@@ -1,0 +1,76 @@
+Scripting in Servicenow:
+
+1. Client side scripting : Which will run in the browser end, we can call it as a client side scripting
+
+A) Client scripts: To make any field mandatory, readonly or visible hide etc.. we will use client scripts
+
+I) Onload () : Whenever the form is getting loaded, if we want to do any manupulations to the form like making field mandatory and readonly or hiding the fields etc..
+ we will use onload client scripts.
+ 
+II) OnChange () : onchange of one variable or field it will effect on the another field or variable we can use onchange client script
+
+>> We can write onload manupulations in the onchange client script as well.
+
+III) OnSubmit () : Whenever the user is trying to submit the form and if you want to do some manupulations or validations we will use onsubmit client scripts
+Iv) OnCellEdit() : whenever user is trying to modify something in the list view, we will use oncelledit client script to restrict it.
+
+B) UI policies : To make any field mandatory, readonly or visible hide etc.. without writing the code we will use UI policies
+
+
+>> How can we make all variables readonly in the RITM which are coming from the catalog item?
+
+By writing a client script or UI policy and click the checkbox of applies on requeted items.
+
+
+Syntaxes which we will use in client side scripting is:
+
+Glideform (g_form): https://docs.servicenow.com/bundle/jakarta-application-development/page/app-store/dev_portal/API_reference/GlideForm/concept/c_GlideFormAPI.html
+Glideuser (g_user): https://docs.servicenow.com/bundle/kingston-application-development/page/app-store/dev_portal/API_reference/GlideUser/concept/c_GlideUserAPI.html
+
+Ex syntax: g_form.setMandatory('fieldname', true)
+
+
+
+
+
+2. Server side scripting : Scripts which will execute in the database level or backend.
+
+A) Business Rules : Business rules will execute in server side which will run when a record is inserted, updated, deleted or when a table is queried.
+
+I) Before :After user submits the form or record and before it reaches to the database, before business rules will execute.
+II) After : After user submits the form and after it reaches to database, this BR will execute.
+III) Async : Schedular wants to run a schedule job from the business rules, we will use async business rules.
+IV) Display : After data read from the database and before presenting to the user.
+
+
+B) Script includes: We can create no of functions in one script include and we can call them whenever we required. basically script includes will run on
+server side but if we need we can run it on the client side also by clicking on client callable checkbox.
+
+I) Server side script includes
+II) Cliet callable script includes: We can call the script includes from the client side
+
+
+Function: Set of lines of code
+
+
+getEmail: function(){
+
+
+
+
+
+},
+
+getManager:function(){
+
+
+
+},
+
+getLocation: function(){
+
+
+
+
+}
+

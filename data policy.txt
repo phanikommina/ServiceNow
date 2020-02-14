@@ -1,0 +1,22 @@
+Data policy:
+
+1. It is applied to data base level or table level
+2. UI policy is applied to form level
+3. if we want to make field mandatory or read only we use data policy
+4. by usig data policy we can't hide the field.
+5. this is alternative for the oncell edit client script
+6. we can write the data poicy on a table for many fields, it can't do on cell edit
+7. when we are importing the data through excel sheets or external source then if you want make any filed mandatory or read only we can use data policies
+8. data policies are created on server side. it is similar to UI policies.
+
+How to create a data policy:
+
+1. go to left navigation from navigator
+2. search for data policy, under system policy need to select the data policy.
+3. go to new
+4. need to select the table name and save
+5. go to the data policy rules under related links
+6. go to new and select the field name and make mandatory or read only and submit
+7. we can create for many fields
+
+                                                                

@@ -1,0 +1,25 @@
+ User Administration:
+
+1. Users
+2. Groups
+3. Roles
+
+A. User  : Users who deosn't have any role assigned to their profiles, we are going to consider them as a end users
+B. ITIL  : If we assigned this role to any of the users they will get the full command of incident, problem and change etc...
+C. Admin : Users with this role assigned they will get full command on the tool.
+D. Delegate : working as someone in their absence
+E. Impersiation: To test as an end user
+F. Security_admin: To create or to update an ACL's we need to enable this role
+
+>> Security admin role is session specific role, if we terminate the session or session expired we are going to loose this role and we need to reenable it.
+
+>> One user is may be part of many groups and user may contains many roles as well
+
+
+ACL -- Access control list or rules
+
+OOTB  - Out of the box 
+
+
+
+

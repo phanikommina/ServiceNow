@@ -1,0 +1,54 @@
+SLM: Service Level Management.
+Slm divided into three types.
+1.SLA- Service Level Agreement
+2.OLA-Opeation Level Agreement
+3.UC-Under pinning Contract
+
+SLA-- Agreement between the Client and Service provider
+OLA--Agreement between the internal teams in an organization
+UC--Service provider and vendor**
+
+
+
+**SLA's can be created only for the tables which are extended from the task table.
+
+SLA:LNB-->SLA-->SLA Definition-->NEW
+
+Name: TEST SLA P5
+TYPE: SLA
+Target: Response
+Table:Incident 
+
+Conditionss:
+Start:
+State  is  New 
+
+Pause:
+State is ONhold
+
+Stop:
+State is closed and submit.
+
+Go to Incident--> Create New-->Just fill the form and save
+
+Check SLA at the down of incident page.
+
+-->State:Onhold
+Check SLA Stage
+
+-->State:Closed
+check SLA stage
+
+
+Respone SLA: How much time taken by thesupport team to acknowledge the ticket
+
+Resolution SLA: How much time is taken by the support team to resolve the ticket.
+
+Retroactive Start: If we set the retro active start to true it will calculate the SLA time to ticket created time instead of priority changed time. 
+or set the start time equal to when incident was created.
+
+P5- 5 days
+P4-22hrs
+P1- 2hrs
+
+

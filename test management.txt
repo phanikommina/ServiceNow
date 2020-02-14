@@ -1,0 +1,12 @@
+states in test management:
+Assaigned
+Draft
+Scoping
+Awaiting approval
+Work in progress
+Testing/QA
+Pending vendor
+Deloy/Launch
+Closed/Complete
+On hold
+Cancelled

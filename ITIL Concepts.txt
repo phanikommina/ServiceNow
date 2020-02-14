@@ -1,0 +1,48 @@
+
+ITIL  --> Information technology infrastructure library
+
+1. Incident Management : If we are facing any issues for the existing functionality we can call it as a incident
+
+An interuption to service, we can call it as a incident
+
+
+a. Identification
+b. Initial investigation
+c. Log a ticket
+d. Catagerization
+e. Prioritization 
+f. Assigning the ticket to proper group
+g. Root cause  or Resolving the incident
+h. Close the incident
+
+>> How the priority can be calculated and can populate in the incident form
+
+Based on Priority and Impact.
+
+>> Priority lookup rules is the one which can handle these impact and urgency changes 
+
+
+
+2. Problem Management : Multiple incidents are created for the same issue or repated incidents can be converted as a problem ticket
+
+>> Problem management will provide the permanenet solution where as incident management will accept the temporary solutions
+
+
+
+3. Change Management : 
+
+1. Normal Change : Which will follow the entire change life cycle, it will have minimal impact. it's not a planned change
+2. Standard change : It's a pre approved change, which doesnn't have any impact. Pre planned change
+3. Emergency change : it needs to be implemented immidiately and it is having more impact. 
+
+
+CAB : Change advisory board
+
+ECAB : Emergency change advisory board
+
+
+
+4. Knowledge Management : To resolve the issues without reaching to support team or without raising the incidents we can follow the articles in the knowledge management.
+
+
+

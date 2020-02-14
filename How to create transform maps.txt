@@ -1,0 +1,27 @@
+Import sets and Transform maps:
+
+-->Importing the data using import sets.
+
+Step1: LNB: Step1:Load data --> select new tab-->select New--> create
+
+Import set Table: create table
+
+Lable:Source table
+
+Select source of the import: file
+file:choose file and submit
+
+Step 2:Create Transform map
+
+Name: Demo Transform
+ select source table(XML Table)
+ select Target table(Finance Tower)
+
+Step3: Select mapping assist-->under related link
+
+Map the fields from source table-->Target table and save.
+
+step4: select transform, under related link in transform map--> Run transform
+
+Need to check target table
+LNB-->Transform-->administration-->Transform maps

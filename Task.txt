@@ -1,0 +1,22 @@
+Task1:
+
+Category: Andhra, Telangana
+
+Sub Category: Guntur, krishna, Ranga reddy, Warangal
+
+How to Create dependent field:
+
+1.Need to create fields Category and sub category along with the choices
+
+2. Right click on Sub category--> Click on Advanced view--> Go to the Dependent field--> Check Use dependent Field-->
+
+Select the 'Dependent on field'-->Category
+
+3.Under Related links--> go to choices--> Mention Dependent Value
+
+
+Task2:
+
+Name: Additional Assignee List(Type:LIST)
+
+Need to hide the option Enter Email Address

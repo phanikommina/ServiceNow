@@ -1,0 +1,60 @@
+	
+   Record Producer : To create task based records, we will use record producers
+
+>>>>Steps to Create Record Producer:--
+
+*** Go to LNB Select the Record Producer Under Service Catalog Click on New Button.
+
+*** Then will give Name as Employee Data and select Employee Table[u_employee_table] under Table Name (This selected Table was already created in Tables under system definition).
+
+*** After that give a short description under what it will contain.
+
+*** Then select the service Catalog under Catalogs and Select the Services under Category then Type Default in View Box Select the Desktop and Mobile Under Availability and click on Can     Cancel Box Under Accessibility.
+
+*** Then Save a Record.
+
+*** After that give a Variables like 
+
+>>>Requested For: Give Reference under Type---Then Give Requested for under Question and Select User[sys_user] in Reference box under Type Specifications then click on UPDATE.
+
+>>>Email ID: Give Single Line Text under Type---Then Give an Email under Question then Click on UPDATE.
+
+>>>Address: Give Multiline Text under Type--- Then Give an Address under Question then Click on UPDATE. 
+
+Like that variables are given under a record which we want. Then Click on UPDATE in Record Page and go for Try It then will give a data and click on submitt Button.
+
+>> We need to pass the values entered in record producer variables to the table record fields.
+
+>> We can do it in 4 ways
+
+1. By using map to field option: Data entered in a record that same data will passed the selected created table. 
+
+For example, Click on Map to field and select the Employee Name Under Field under Requested for Variable then click on UPDATE then go for Try 
+
+It, In that select the name under reference click on Submit your selected name will automatically passed to Employee Table which was created in Tables.  
+
+2. Giving the same name as field in the table for variable: Give the field type in record that same filed type was gave in table also.
+
+For example, select the Single Line Text Type under Filed in Email Id variable, click on UPDATE and go for Try it, that same type was gave in Email ID field Under Employee Table. 
+
+It displays both are similiar Type.
+  
+3. By using the record producer script: Instead of Map field we will use this scripting Code.
+
+For example, type current.u_description=producer.comments; in Script under what it will contain then click on UPDATE and go for Try it to select the name under reference click on submitt, your selected name will automatically passed to Employee Table .  
+
+4.Template : Give a Message using template.
+
+For example, create a new template under Generate Record data In that give New Template under Name and select Employee table under Table then give short description then give Employee Name 
+and Employee Record Details Under Template then click on Submitt. After that give //current.u_description=producer.comments; in script under what it will contain 
+
+****For Creating Employee Table Number like (EMP0001001)
+
+>> Go to LNB--- select Number Maintainence then click on New in that we will give Table Name under Table give prefix like EMP and give 1000 under Number and give 7 under Number of Digits.
+
+After that go to LNB Select Tables and then Select Employee Table take right click on number go to configure dictionary and give javascript:getNextObjNumberPadded(); under Controls 
+then click on UPDATE. 
+ Then Go to dictionary select the Employee table under Number column name give this script javascript:getNextObjNumber(); under Default Value then click on UPDATE.
+After that go to the tables and check to give the data in show form it will automatically generated a EMP Number.
+
+ 

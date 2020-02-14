@@ -1,0 +1,27 @@
+creating a workflow:
+
+Go to filter Navigation-->search workflow->select workflow-->click on new workflow-->enter WF name-->set table name as "requested item(sc_req_item)"
+
+-->add description-->submit
+
+
+Workflow : it is an automation process.
+
+Core activities:
+Approvals
+conditions
+notifications
+Service catalog
+subflows
+tasks
+timers
+utilities 
+
+Workflow stages:
+
+Request approved
+Wating for approval
+Fulfillment
+Delivery
+Reques Cancelled
+Completed

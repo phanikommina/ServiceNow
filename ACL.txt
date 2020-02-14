@@ -1,0 +1,49 @@
+ACL's (Access control list or access cotnrol rules) : It will control the visibility of the data based on the roles, conditions and script.
+
+ACL: An instance uses access control list (ACL) rules, also called access control rules, to control what data users can access and how they can access it. 
+     ACL rules require users to pass a set of requirements in order to gain access to particular data. Each ACL rule specifies:
+
+   1. The object and operation being secured
+   2. The permissions required to access the object
+   
+create: Allows users to insert new records (rows) into a table.
+read : Allows users to display records from a table.
+write : Allows users to update records in a table.
+delete: Allows users to remove records from a table or drop a table.
+add_to_list : Allows users to add fields into the list
+list_edit : Allows users to update records (rows) from a list view.
+
+>> Admin overrides: Select this check box to have users with the admin role automatically pass the permissions check for this ACL rule. 
+Admin users pass regardless of what script or role restrictions apply. However, the nobody role takes precedence over the admin override option. 
+If an ACL is assigned the nobody role, admin users cannot access the resource even when Admin overrides is selected. 
+
+1. Table level ACL (tablename.none) : which will apply for the table level restrictions
+2. Field level ACL (tablename.*) : which will apply for all the fileds in the table
+3. Single field level ACL (tablename.fieldname) : which will apply for the specific field in the table
+4. *.none --> it will be applicable for all the tables in instance
+
+5. *.* --> it will be applicable for all the tables and all the fields
+
+** If the user is trying to access the records which they don't have the access they will be prompted with the below message,
+
+>> Security constrains restrcting u to access the requested page.
+
+>> ACL's is going to work based on type and operation
+
+>> ACL's will execute based on the below conditions,
+
+1. Roles
+2. Condition
+3. Script
+
+
+
+* Record level ACL's can be processed in below order,
+
+>> First it will check for any field level ACL is there or not, 
+>> then it will check for Table level ACL 
+
+
+>> If the users who are having field level access, they should have the table level access also.
+
+

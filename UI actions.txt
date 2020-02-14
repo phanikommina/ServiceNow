@@ -1,0 +1,81 @@
+UI Actions: 
+
+>> UI action is like a button, it can show upon a form, button, Context menu, as a link(under related links).
+
+>> By clicking on "client" checkbox we can run the UI actions in client side also.
+
+>> Basically UI actions will run on server side.
+
+>> current object can be used in server side only
+
+>> UI actions are condition based buttons
+
+>> We can write th both client and server side code in the UI action script itself.. by declaring the two functions one for client and another one for server.
+
+Example : Reopen incident
+
+function reopenincident(){
+	
+	var desc = g_form.getValue('description');
+	
+	if(desc==''){
+		
+		alert('Description should be manadatory to reopen the incident');
+		g_form.setMandatory('description', true);
+		return false;
+	}
+
+	gsftSubmit(null, g_form.getFormElement(), 'reopen_inc'); //MUST call the 'Action name' set in this UI Action
+}		
+	
+if(typeof window =='undefined')	
+	runthebelowcode();
+	
+function runthebelowcode(){
+	
+	current.state=2;
+	current.update();
+	action.setRedirectURL(current);
+	gs.addInfoMessage('Your ticket is successfully reopend');
+
+}
+
+How to Create an UI action:
+
+--> Go to filter Navigator
+--> Search UI action
+--> Select under system definition select UI action --> Right click --> Open new tab --> click new --> Enter UI action name --> select table(INCIDENT)
+--> Enter action name(backend name)
+--> click "show insert action" as true
+--> select form button, form link and context menu as true
+--> form style as primary
+--> save 
+
+How to apply UI action to set redirect to another page using UI action:
+
+--> open UI action
+--> go to script section(action.setRedirectURL('problem');)
+--> Save
+
+Task:
+
+How to create the Save button using UI action
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

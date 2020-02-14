@@ -1,0 +1,59 @@
+Service Catalogue : Goods or services which are available for the internal employees as well as to the external customers.
+
+
+Request number (REQ00123456)
+RITM (Requested Item) number (RITM00233333)
+SCTASK (SCTASK001021233)
+
+
+1. Catalogue item : If user wants to order one item under one request we will use catalogue item.
+
+2. Record Producer : To create task based records, we will use record producers
+
+>> We need to pass the values entered in record producer variables to the table record fields.
+
+>> We can do it in 4 ways
+
+1. By using map to field option
+2. Giving the same name as field in the table for variable
+3. By using the record producer script
+
+
+
+3. Order guides : To order multiple items under one request.
+
+>> Under rule base we will include the items in order guide.
+
+>> Order guides will follow the 3 step process as below
+
+1. Describe needs
+2. Choose options
+3. Checckout
+
+>> Two step process: If we click on the two process check box, system will eliminate the confirmation page and it will take u to order page.
+
+>> Cascade Variables: If we click on this checkbox, system will pass the information from the order guide variables to the catalog item variables which are 
+ included in the order guide.
+ 
+ >> Both of order guide variables and catalog item variables should be having same name.
+
+
+Service catalogue --> Catagories --> Items (catalogue items, record producers and order guides)
+
+Variables: Variables are nothing but the quessionaries where user can input before submitting the items.
+
+variable sets: Set of varibles where we can re use them in the multiple items without recreating them we can store them in the variable sets.
+
+>> By default for the catalog items and order guides if user submits it will create Request and RITM.
+
+>> By using "Availabe for" and "Not available for" options we can restrict the catalog item or record producer or order guides visibility for the users based
+ on the roles, users, groups, department, location etc..
+ 
+>> If both available for and not available for are mentioned system will take the not available for as the preference.
+
+1. Requested For 
+2. Manager
+3. RAM
+4. HDD
+5. Any special instructions
+6. Description

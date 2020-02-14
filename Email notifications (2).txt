@@ -1,0 +1,30 @@
+Email Notifications: When ever an ticket is updated or created we will triger the email notifications.
+
+>> Email notifications are disbled in  non production environments, if we want to enable we need to do it in email properties.
+
+>> In Servicenow we can trigger email notifications in 3 ways
+
+1. When a ticket is inserted or created
+2. When a ticket is updated
+3. When an event is fired (or thorugh business rule)
+4. By using workflows
+
+
+>> Each email notification contains 3 sections,
+
+1. Whom to send
+2. When to send
+3. What to send
+
+>> To check the email notification in sub prod environments we need to navigate to --> type emails in left navigation bar --> click on emails under system logs
+
+>> To create an event please follow the below path,
+
+type event in the left navigation bar --> unser m policy click on registry
+
+>> Syntax to call the event,
+
+gs.eventQueue('event name', current, parm1, parm2);
+
+>> When there are multiple notifications in the Outbox that are from the same notification Table and addressed to the same recipients, notifications with the highest Weight are sent - the default value 0 causes ServiceNow to always send the notification.
+ (assuming the Conditions are met) 

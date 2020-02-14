@@ -1,0 +1,82 @@
+Integration: To establish a connection between two different applications.
+
+Integration types:
+
+1. Web services integration
+
+A) SOAP (Simple Object Access Protocol) WS
+
+i) Direct WS : Without validation if u want to trigger the transactions to third party application we will use direct web services.
+
+Steps to follow to create the Direct WS:
+
+1. SOAP message and choose the function based on the requirement (like insert, update, delete etc..)
+2. Remove the function name in the body  of the XML
+3. Create the varaible substutions
+4. Create a Business rule and call the soap message and function in the BR
+5. Pass the parameters (Field values)
+
+
+ii) System WS : When we are receiving the data from the 3rd party application to servicenow we will use system web services.
+
+Steps: 
+
+1. Type system web services in the left navigation bar --> click on create new under inbound
+2. Enter the label name (Staging table)
+3. select the target table
+4. uncheck the create transform map check box
+5. create the transform map
+6. do the field mappings 
+7. Validations like keeping the coalsce or writing the script 
+8. Provide the end point and authentication to the thrid party admins.
+
+
+iii) Scripted WS
+
+
+
+B) REST (Reprasentational State Transfer Protocol) WS
+
+
+Differences between the REST and SOAP:
+
+1. In Soap we can sent the response in the XML format only, but in Rest we will send the response in different formats like XML, JSON , CSV etc..
+2. In Soap we have to give WSDL in the end point, but in Rest it is not required.
+3. Data transformation is faster in Rest when compared to Soap.
+
+
+
+REST message functions or methods:
+
+1. POST : If we want to insert a new record in the 3rd party application we will use POST method
+2. PUT : If we want to update a existing record in the 3rd party application we will PUT method
+3. GET : If we want to get the data from the 3rd party application, we will use GET method
+4. DELETE : If we want to delete the records from the 3rd party application, we will use delete method
+5. PATCH: To write for any reccords in 3rd party application we will use PATCH method.
+
+
+
+key: value
+
+number: INC0010001
+
+<number> INC0010001 </number>
+
+
+
+2. Email integration (inbound email actions)
+3. LDAP integration
+
+
+COmponents required for integration:
+
+1. End point(URL)
+2. Authentication
+3. Data to be sent
+
+
+Outbound (Publisher) : Triggering the transaction from the servicenow to third party application we can call it as a outbound
+
+Inbound (Consumer): Receiving the data from the third party application to ServiceNow
+
+>> By default coalsce is not case sensitive, if we want to make it case sensitive we have to select the checkbox.

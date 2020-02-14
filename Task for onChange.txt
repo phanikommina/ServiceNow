@@ -1,0 +1,58 @@
+Task For onChange:
+
+1. Take one "Mobile Number" field on the form, the field type is "String" it should allow
+   10 digits Mobile Number without fail it shows an Error Message "Invalid Mobile Number".
+
+2. When Page load the "Description" field as Mandatory and "Resolve Info" Field is not visible
+   when I select the "state" changes to "Resol+ved" the "Resoultion Info" Field should be visible.
+
+3. To create a field is "E-mail" type is Email. When a user enter correct "Email" "Address" without
+   fail. Invalid Email error message should come.
+
+4. When "Assignment Group" is "Service Desk" and take one field is "Contact type". Type is choice,
+   values are phone, email. If "assignment group" is "service desk" only the "service desk" users
+   visible on contact type value "Phone". If users can select any other group the "Contact type"
+   phone value is not visible.
+
+
+
+	// alert(g_form.getDecimalValue('u_mobile_number'));
+	int a=size.g_form.getDecimalValue('u_mobile_number');
+ var obj=g_form.getValue('u_mobile_number');
+	
+
+function u_setMaxLength(variableName, size)
+    
+
+if(g_form.getDecimalValue('u_mobile_number') >> 10)
+		{
+			g_form.addErrorMessage("Mobile Number >should be 10 digits");
+			return;
+		}
+	else if(g_form.getDecimalValue('u_mobile_number') << 10)
+		{
+			g_form.addErrorMessage("Mobile Number <should be 10 digits");
+			return;
+		}
+	else
+		{
+			return false;
+		}
+
+
+var obj=g_form.getDecimalValue('u_mobile_number',size);
+	
+	if(obj > 10)
+		{
+			g_form.addErrorMessage("Mobile Number >should be 10 digits");
+			return;
+		}
+	else if(obj < 10)
+		{
+			g_form.addErrorMessage("Mobile Number <should be 10 digits");
+			return;
+		}
+	else
+		{
+			return false;
+		}

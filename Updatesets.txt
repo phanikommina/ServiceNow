@@ -1,0 +1,55 @@
+Update sets:
+
+
+Asprin - berlin - calgery - dublin - eureka - fuji - geneva - hesinki - istnbul - jakarta - kingston - London - madrid
+
+>> Servicenow will support current version to previous 2 versions only
+
+>> If u modify the OOTB scripts, servicenow will exclude them from the upgrade.
+
+>> Instances which we will use in the projects is,
+
+Dev --> Test or UAT or QA --> PreProd --> Production
+
+>> Don't modify anything manually in the production environment.
+
+
+Update sets: Group of customizations can be moved from one instance to another instance.
+
+>> Data can be captured in the form of XML in the updatesets.
+
+>> There are limitations to capture in the updatesets, they are 
+
+1. Record creation will not get captured in updatesets
+2. Home pages will not get captured in the updatesets
+3. Schedule jobs will not get captured
+
+>> If we want to move the above configurations to another environment we have to export the xml and then import it to the target environment.
+
+Updateset process in source environment:
+
+1. Create a new updateset with proper naming 
+2. Make it current updateset
+3. Capture all the customizations
+4. Make it complete once u are done with all the changes
+5. Export to XML
+
+
+Steps to follow in the target environment:
+
+1. Retrive updatesets in the left navigation bar
+2. Import XML
+3. Choose the XML
+4. Preview updatesets
+5. Commit updateset
+
+
+Backout: If u want to remove or delete all the customizations from the target environment we need to use the backout updateset option.
+
+Merging Updateset: If we want to combine one or two updatesets before moving it to target environment, we will use merging an updatesets method in servicenow.
+
+>> Merge updateset will have the latest customizations only.
+
+
+
+

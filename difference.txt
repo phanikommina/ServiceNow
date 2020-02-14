@@ -1,0 +1,10 @@
+Difference between Async and after business rule:
+
+After business rules are executed synchronously                                                           Async business rules are executed asynchronously
+
+
+After BR are used to update the information on related object that needs to be                            Async BR are used to update the information on related object that do not 
+display immediately such as glide record queries                                                          display immediately such as calculating metrics and SLA's
+
+
+we can use current and previous objects in after BR                                                       We can't use previous object in Async BR and current object cannot be reference on delete

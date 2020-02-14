@@ -1,0 +1,51 @@
+Versions:
+
+1. Aspen - Dec 2011
+
+2. Berlin -july 2012
+
+3. Calgary- feb 2013
+
+4. Dublin - Oct  2013
+
+5. Eurekha- May 2014
+
+6. Fuji - March 2015
+
+7. Geneva- Dec 2015
+
+8. Helsinki- May 2016
+
+9. Istanbul- 2017
+
+10. Jakartha -2017
+
+11. Kingston- 2018
+
+12. London -2018
+
+13. Madrid- 2019
+
+14. Newyork-2019
+
+SAAS: Software As A Service
+
+
+1.What is service Now..?
+
+a:1.ITSm Tool which automates all the business processes.-information tecnolagy service managment
+
+  2.Domain Independent.
+
+  3.SaaS platform
+  
+2.Benefits of service now..?
+
+A.Cloud platform
+
+-->Easy upgrade
+
+-->User friendly interface
+
+-->Availability of Reporting features.
+

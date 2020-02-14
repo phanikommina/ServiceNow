@@ -1,0 +1,5 @@
+Creating workflow:
+
+Go to filter Navigator-->Search workflow-->Select Workflow Editor-->click on New Workflow-->Enter Workflow Name-->Set table name as 'Requested Item(sc_req_item)'-->
+
+Add description-->submit

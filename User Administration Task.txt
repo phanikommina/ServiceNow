@@ -1,0 +1,12 @@
+User Administration:
+
+How to create the users..?
+-->LNB-->users-->under user administration-->users--> New--> fill the details and save
+
+Task: Create to 10 users and assign individual roles
+
+How to create the groups..?
+-->LNB--> Groups--> under user administration--> groups--> fill with random details and save.
+
+Task: Create any two groups and add members(users) into the group and add roles to group
+
