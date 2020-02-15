@@ -80,3 +80,13 @@ Outbound (Publisher) : Triggering the transaction from the servicenow to third p
 Inbound (Consumer): Receiving the data from the third party application to ServiceNow
 
 >> By default coalsce is not case sensitive, if we want to make it case sensitive we have to select the checkbox.
+
+SOAP message functions:
+
+1. getRecord
+2. deleteRecord
+3. update
+4. deleteMultiple
+5. getKeys
+6. insert
+7. get
